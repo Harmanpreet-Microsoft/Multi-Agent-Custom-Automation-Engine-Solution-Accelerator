@@ -40,7 +40,7 @@ jobs:
           pip install pytest-cov
           
       - name: Set PYTHONPATH
-        run: echo "PYTHONPATH=${PYTHONPATH}:$GITHUB_WORKSPACE/src" >> $GITHUB_ENV
+        run: echo "PYTHONPATH=${PYTHONPATH}:$GITHUB_WORKSPACE" >> $GITHUB_ENV
 
       - name: Check if test files exist
         id: check_tests
