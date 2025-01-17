@@ -39,7 +39,8 @@ jobs:
           pip install -r src/backend/requirements.txt
           pip install pytest-cov
           pip install pytest-asyncio
-          pip install azure-monitor
+          pip install azure-mgmt-monitor
+
           
       - name: Set PYTHONPATH
         run: |
